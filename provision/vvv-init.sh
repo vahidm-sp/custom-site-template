@@ -22,6 +22,7 @@ noroot touch ${VVV_PATH_TO_SITE}/log/nginx-error.log
 noroot touch ${VVV_PATH_TO_SITE}/log/nginx-access.log
 
 echo "Setting up public_html and index.php file"
+noroot mkdir -p ${VVV_PATH_TO_SITE}/public_html
 noroot touch ${VVV_PATH_TO_SITE}/public_html/index.php
 
 echo "Copying the sites Nginx config template ( fork this site template to customise the template )"
